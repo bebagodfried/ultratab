@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  
+    ===================================================================
+    ========== Quearch | The open source dashboard for chrome. ==========
+    ======== by @bebagodfried - <me@bebagodfried.com>  (c)2022 ========
+    -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Customize Chrome sartpage and be productive">
+
+  <title>Third party launcher</title>
+  <link rel="icon" href="includes/vendor/favicon.png">
+  <link rel="apple-touch-icon" href="includes/vendor/favicon/touch.png">
+  
+  <link rel="stylesheet" href="includes/vendor/theme/elvys.min.css">
+
+</head>
+<body id="application" class="bg-cover bg-top-left select-none overflow-hidden">
+  <div id="loader" class="fixed z-9 fullscreen flex items-center justify-center bg-dark-900 cursor-none">
+    <center>
+      <img class="ease-in vw-30" src="loader" alt="loader">
+    </center>
+  </div>
+
+  <section id="dashboard" class="fit-screen hidden">
+    <header class="bg-none no-border z-7">
+      <div class="flex container items-center justify-between my-1">
+        <div id="clock" class="backdrop-blur-10 border border-b center py-1" width="92">
+          <date id="time" date-format="H:i:s">--:--:--</date>
+        </div>
+        <div class="flex items-center g-1 relative">
+          <button class="bg-none p-1" onclick="display('#globalOption')"><i class="fa-solid fa-bars fs-6"></i></button>
+          <ul id="globalOption" class="absolute bottom-0 right-0 translateY-100  max-width bg-dark rounded shadow show-list-divider hidden">
+            <li class="hover:bg-light-100 hover:fg-dark-100"><button id="profileManager" class="bg-none currentColor p-1"><i class="fa-solid fa-user-gear"></i> Edit profile</button></li>
+            <hr class="divider my-0 opacity-20 w-80">
+            <div class="flex justify-center">
+              <button id="enableFullscreen" aria-expanded="false" class="bg-none p-1 muted" title="Enable fullscreen"><i class="fa-solid fa-tv"></i></button>
+              <button id="btn-settings_1" class="bg-none p-1" title="Settings" title="Settings"><i class="fa-solid fa-gear"></i></button>
+              <button id="btn-reload_1" class="bg-none p-1 active:animate-spin" title="Restart"><i class="fa-solid fa-arrows-rotate fg-red"></i></button>
+            </div>
+          </ul>
+          <img id="user-pic_1" src="img/user.png" alt="avatar" class="ease-in size-32 hover:shadow-primary hover:cursor-pointer">
+        </div>
+      </div>
+    </header>    
+    
+    <div class="grid p-1">
+      <div class="flex items-center fg-light flex-warp g-2 justify-start scroll-sm-x rounded-full">
+        <div id="shortcut" class="grid grid-columns-6 items-center flex-1 g-2 py-1 px-2 box-shadow-primary backdrop-blur-10 mb-1">
+          <div class="flex items-center border border-l h-50 pl-1">
+            <botton onclick="display('#apps')" href="#" target="_blank" class="p-0 bg-none ease-in">
+              <div class="grid justify-around grid-columns-3 no-gap size-48 text-light-100 x-small hover:text-light ease-in">
+                <i class="fa-solid fa-square hover:scale-125 ease-in"></i>
+                <i class="fa-solid fa-square hover:scale-125 ease-in"></i>
+                <i class="fa-solid fa-square hover:scale-125 ease-in"></i>
+                <i class="fa-solid fa-square hover:scale-125 ease-in"></i>
+                <i class="fa-solid fa-square hover:scale-125 ease-in"></i>
+                <i class="fa-solid fa-square hover:scale-125 ease-in"></i>
+                <i class="fa-solid fa-square hover:scale-125 ease-in"></i>
+                <i class="fa-solid fa-square hover:scale-125 ease-in"></i>
+                <i class="fa-solid fa-square hover:scale-125 ease-in"></i>
+              </div>
+            </botton>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apps" class="bg-dark bg-sm-dark-900 bg-opacity-20 fixed top-0 left-0 flex flex-column g-2 items-center justify-center bg-dark-900 rounded shadow fullscreen z-8 backdrop-blur-10 animate-fadeIn animated-500 hidden">
+    <span class="double-line divider span-before-1 span-after-11 w-full" height="5" opacity="50"><h1 class="currentColor opacity-100">Applications</h1></span>
+    <div class="spacer" height="1"></div>
+    <menu id="network" class="flex-row container flex-warp justify-start g-1 g-sm-2 py-2 w-80 max-vh-60 overflow-auto">
+
+
+    </menu>
+    <div class="spacer" height="1"></div>    
+    <div class="absolute bottom-0 bg-dark bg-opacity-20  bg-opacity-50 flex container items-center justify-between g-1 py-2 z-2">
+      <div class="inline-flex items-center g-1 z-9">
+        <div id="user" class="inline-flex items-center g-1">
+          <img id="user-pic_2" src="img/user.png" alt="avatar" class="ease-in size-32 hover:shadow-primary">
+          <span id="username" class="cursor-pointer"></span>
+        </div>
+        <div class="spacer flex flex-1 items-center mx-1">|</div>
+        <button id="btn-search" class="bg-light-900 rounded-full hover:scale-125 ease-in p-1" title="Search"><i class="fa-solid fa-search"></i></button>
+        <button id="btn-settings_2" class="bg-light-900 rounded-full hover:scale-125 ease-in p-1" title="Settings"><i class="fa-solid fa-gear"></i></button>
+        <button id="btn-reload_2" class="bg-light-900 rounded-full hover:scale-125 ease-in p-1 active:animate-spin" title="Restart"><i class="fa-solid fa-arrows-rotate fg-red"></i></button>
+      </div>
+        
+      <div class="spacer"></div>
+      <form method="post" id="search" class="bg-none rounded-0 flex-1 flex items-center justify-center g-1 animate-fadeIn animated-500 p-0 hidden">
+        <span>|</span>
+        <div class="flex border border-2 border-primary bg-dark text-dark items-center mx-auto rounded-full" height="48">
+          <input type="search" inputmode="url" name="term" id="" class="fs-6 p-1 px-2 rounded-full w-full hidden-md" height="45" placeholder="Search something..." autofocus width="500">
+          <i class="fg-light ml-1 opacity-20">&verbar;</i>
+          <button class="bg-none fg-primary p-1 mr-1 size-32 hover:bg-none" type="submit"><i class="fa-solid fa-search"></i></button>
+        </div>
+      </form>
+      <div class="spacer"></div>
+
+      <button id="Close" class="bg-none border rounded-full size-32 opacity-20 hover:opacity-50 hover:scale-125 ease-in p-1" onclick="esc()"><i class="fa-solid fa-home" title="Back to dashboard"></i></button>
+    </div>
+    <small class="absolute bottom-0 right-0 opacity-20 p-1 x-small"><i class="fa-regular fa-copyright"></i> <date id="copyright" date-format="Y"></date> | Dashboard v1.0 </small>
+  </section>
+
+  <script src="helpers.js"></script>
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+  <script src="date.js"></script>
+  <script src="search.js"></script>
+
+</body>
+</html>

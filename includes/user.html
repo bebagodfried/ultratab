@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quearch | User manager</title>
+  <link rel="stylesheet" href="../includes/vendor/theme/elvys.min.css">
+
+</head>
+<body class="p-1 overflow-hidden select-none">
+
+  <div id="loader" class="fixed top-0 left-0 z-9 fullscreen flex items-center justify-center bg-dark-900 cursor-none">
+    <center class="">
+      <i class="fa-solid fa-spinner fa-spin"></i>
+    </center>
+  </div>
+
+  <h1><i class="fa-solid fa-user-pen"></i> Edit profile</h1>
+  <div class="divider opacity-20"></div>
+  <form action="" method="post" class="bg-none mx-2 overflow-hidden">
+    <div class="text-left">
+
+      <div class="grid grid-flow-column g-0">
+        <input type="text" name="u_firstname" id="u_firstname" class="rounded px-1" placeholder="firstname" value=""> |
+        <input type="text" name="u_lastname" id="u_lastname" class="rounded px-1" placeholder="lastname">
+      </div>
+      
+      <span class="divider opacity-20 mb-1"></span>
+      <div class="grid grid-flow-column g-0">
+        <input type="email" name="u_mail" id="u_mail" class="rounded px-1" placeholder="email"> |
+        <input type="password" name="u_pass" id="u_pass" class="rounded px-1" placeholder="password" autocomplete="current-password">
+      </div>
+
+      <div class="mt-1 center">
+        <button type="submit"><i class="fa-solid fa-save"></i> Save</button>
+      </div>
+      
+    </div>
+  </form>
+
+  <!-- scripts -->
+  <script src="../helpers.js"></script>
+  <script src="edit.js"></script>
+</body>
+</html>

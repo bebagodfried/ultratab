@@ -1,0 +1,121 @@
+[
+  {
+    "name"    : "Bing",
+    "url"     : "https://bing.com",
+    "favicon" : "includes/favicons/bing"
+  },
+
+  {
+    "name"    : "Gmail",
+    "url"     : "https://mail.google.com",
+    "favicon" : "includes/favicons/gmail"
+  },
+
+  {
+    "name"    : "YouTube",
+    "url"     : "https://youtube.com",
+    "favicon" : "includes/favicons/youtube"
+  },
+
+  {
+    "name"    : "GitHub",
+    "url"     : "https://github.com",
+    "favicon" : "includes/favicons/github"
+  },
+  
+  {
+    "name"    : "Whatsapp inc.",
+    "url"     : "https://web.whatsapp.com",
+    "favicon" : "includes/favicons/whatsapp"
+  },
+
+  {
+    "name"    : "Instagram",
+    "url"     : "https://instagram.com",
+    "favicon" : "includes/favicons/instagram"
+  },
+
+  {
+    "name"    : "Meet",
+    "url"     : "https://meet.google.com",
+    "favicon" : "includes/favicons/meet"
+  },
+
+  {
+    "name"    : "Translate",
+    "url"     : "https://translate.google.com/",
+    "favicon" : "includes/favicons/translate"
+  },
+
+  {
+    "name"    : "Pexels",
+    "url"     : "https://pexels.com",
+    "favicon" : "includes/favicons/pexels"
+  },
+
+  {
+    "name"    : "WordPress",
+    "url"     : "https://wp.org",
+    "favicon" : "includes/favicons/wordpress"
+  },
+
+  {
+    "name"    : "LinkedIn",
+    "url"     : "https://linkedin.com",
+    "favicon" : "includes/favicons/linkedin"
+  },
+
+  {
+    "name"    : "Facebook",
+    "url"     : "https://facebook.com",
+    "favicon" : "includes/favicons/facebook"
+  },
+
+  {
+    "name"    : "Twitter",
+    "url"     : "https://twitter.com",
+    "favicon" : "includes/favicons/twitter"
+  },
+
+  {
+    "name"    : "Mailchimp",
+    "url"     : "https://mailchimp.com/",
+    "favicon" : "includes/favicons/mailchimp"
+  },
+
+  {
+    "name"    : "Codepen",
+    "url"     : "https://codepen.io/",
+    "favicon" : "includes/favicons/codepen"
+  },
+
+  {
+    "name"    : "Jsfiddle",
+    "url"     : "https://jsfiddle.net/",
+    "favicon" : "includes/favicons/jsfiddle"
+  },
+
+  {
+    "name"    : "Iconfinder",
+    "url"     : "https://iconfinder.com",
+    "favicon" : "includes/favicons/iconfinder"
+  },
+
+  {
+    "name"    : "Namecheap",
+    "url"     : "https://www.namecheap.com",
+    "favicon" : "https://www.namecheap.com/assets/img/nc-icon/favicon.ico"
+  },
+
+  {
+    "name"    : "Malt",
+    "url"     : "https://www.malt.fr",
+    "favicon" : "https://dam.malt.com/rebranding2020/malt-logo/icon-76x76"
+  },
+
+  {
+    "name"    : "PageSpeed",
+    "url"     : "https://pagespeed.web.dev",
+    "favicon" : "https://ssl.gstatic.com/pagespeed/insights/ui/logo/favicon_48.png"
+  }
+]

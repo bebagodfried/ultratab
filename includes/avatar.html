@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quearch | User manager</title>
+  <link rel="stylesheet" href="../includes/vendor/theme/elvys.min.css">
+
+</head>
+<body class="p-1 overflow-hidden select-none">
+  
+  <div id="loader" class="fixed top-0 left-0 z-9 fullscreen flex items-center justify-center bg-dark-900 cursor-none">
+    <center class="">
+      <i class="fa-solid fa-radius fa-spin"></i>
+    </center>
+  </div>
+  
+  <form action="" method="get" class="bg-none">
+    <div class="text-center">
+
+      <label for="profile_link" class="block my-1">
+        <img src="" alt="" class="ease-in border box-shadow" id="preview_profile"  width="98" height="98">
+      </label>
+
+      <input type="text" name="profile_link" id="profile_link" placeholder="path to your avatar" class="no-border bg-none">
+      <br>
+      <span class="divider opacity-20 m-0"></span>
+      <label for="rounded-radius" class="inline-flex items-center">
+        <!--  -->
+        Rounded | &nbsp;
+        <i>off &nbsp;</i>
+        <i id="toggle_radius" class="fa-solid fa-toggle-off ease-in fa-xl"></i>
+        <input type="checkbox" name="rounded-radius" id="rounded-radius" hidden>
+        <i>&nbsp; on</i>
+        <!--  --></label>
+
+      <div class="mt-1">
+        <button type="submit"><i class="fa-solid fa-save"></i> Save</button>
+      </div>
+      
+    </div>
+  </form>
+
+  <!-- scripts -->
+  <script src="../helpers.js"></script>
+  <script src="avatar.js"></script>
+</body>
+</html>

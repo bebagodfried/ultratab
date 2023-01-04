@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Settings</title>
+  <link rel="stylesheet" href="../includes/vendor/theme/elvys.min.css">
+
+</head>
+  <body class="p-1 select-none">
+
+    <div id="loader" class="fixed top-0 left-0 z-9 fullscreen flex items-center justify-center bg-dark-900 cursor-none">
+      <center class="">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+      </center>
+    </div>
+
+    <h1><i class="fa-solid fa-screwdriver-wrench"></i> Settings</h1>
+    <div class="divider opacity-20"></div>
+    <form action="" method="post" class="bg-none">
+      <div class="text-left">
+
+        <div class="flex">
+          <label><i class="fa-solid fa-hashtag  size-32"></i></label>
+          <input type="text" name="title" id="title" class="border border-l bg-none px-1 w-full" placeholder="Title / H:i:s">
+        </div>
+
+        <span class="divider opacity-20"></span>
+        <div class="spacer" height="1"></div>
+        <span class="divider opacity-20"></span>
+
+        <div class="flex">
+          <label><i class="fa-solid fa-hourglass size-32"></i></label>
+          <input type="text" name="loader" id="loader" class="border border-l bg-none px-1 w-full" placeholder="Loader">
+        </div>
+
+        <span class="divider opacity-20"></span>
+
+        <div class="flex justify-between">
+          <i class="fa-solid fa-spinner size-32"></i>
+          <div class="flex flex-1 items-center justify-between g-1 border border-l px-1">
+            <span class="flex-1 text-light-500">Animate loader </span>|
+            <label class="flex items-center" for="spinner">
+              <i>off &nbsp;</i>
+              <i id="toggle_spinner" class="fa-solid fa-toggle-off ease-in fa-xl"></i>
+              <input type="checkbox" name="spinner" id="spinner" hidden>
+              <i>&nbsp; on</i>
+            </label>
+          </div>
+        </div>
+
+        <span class="divider opacity-20"></span>
+
+        <div class="flex">
+          <label class="size-32"><i class="fa-solid fa-image"></i></label>
+          <input type="text" name="background" id="background" class="border border-l bg-none px-1 w-full" placeholder="Background">
+        </div>
+
+        <span class="divider opacity-20"></span>
+
+        <div class="flex">
+          <label><i class="fa-solid fa-search size-32"></i></label>
+          <input type="url" name="engin" id="engin" class="border border-l bg-none px-1 w-full" placeholder="Search engin">
+          <label for="target" class="flex pr-1" title="target">_blank <input type="checkbox" name="target" id="target" value="_blank" class="ml-1"></label>
+        </div>
+
+        <span class="divider opacity-20"></span>
+        
+        <div class="spacer" height="1"></div>
+        <span class="divider opacity-20"></span>
+
+        <div class="flex justify-around p-1">
+          <label for="ico-left" id="ico-left-label" class="border rounded size-32" title="Shortcuts align left"><i class="fa-solid fa-align-left"></i></label>
+          <input type="radio" name="shortcut-align" id="ico-left" class="border border-l bg-none px-1" value="left" hidden>
+        
+          <label for="ico-center" id="ico-center-label" class="border rounded size-32" title="Shortcuts align center"><i class="fa-solid fa-align-center"></i></label>
+          <input type="radio" name="shortcut-align" id="ico-center" class="border border-l bg-none px-1" value="center" hidden>
+        
+          <label for="ico-right" id="ico-right-label" class="border rounded size-32" title="Shortcuts align right"><i class="fa-solid fa-align-right"></i></label>
+          <input type="radio" name="shortcut-align" id="ico-right" class="border border-l bg-none px-1" value="right" hidden>
+        </div>
+
+        <div class="spacer" height="1"></div>
+        
+        <div class="flex items-center justify-around mt-1 center">
+          <button type="reset" class="bg-none outline outline-red text-danger"><i class="fa-solid fa-trash"></i> restore</button>
+          <button type="submit" class="m-0"><i class="fa-solid fa-save"></i> Save</button>
+        </div>
+    
+      </div>
+    </form>
+      
+    <!-- scripts -->
+    <script src="../helpers.js"></script>
+    <script src="settings.js"></script>
+  </body>
+</html>
